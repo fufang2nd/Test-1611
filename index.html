@@ -1,13 +1,200 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- Navigasi -->
-<section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aroem</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Javascript -->
     
-</section>
-</body>
+  </head>
+  <body>
+    <!-- Section 1: Navigation Bar Start -->
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">
+            <img src="img/Logo.png" alt="logo">
+        </a>
+    
+        <div class="navbar-nav">
+          <a href="#">Home</a>
+          <a href="#about-us">About</a>
+          <a href="#products">Products</a>
+          <a href="#contact-us">Contact Us</a>
+        </div>
+    
+        <div class="search-button">
+            <i data-feather="search"></i>
+        </div>
+
+      </nav>
+    <!-- Section 1: Navigation Bar End -->
+
+    <!-- Section 2: Header Start -->
+    <section class="header">
+      <div class="header-text">
+        <h1>Scented at it finest
+        </h1>
+        <p>
+          Just, don't get burned..
+        </p>
+      </div>
+    </section>
+    <!-- Section 2: Header End -->
+
+    <!-- Section 3: Product Start -->
+    <section class="products" id="products">
+      <div class="text-product">Blink, and you'll miss our product</div>
+      
+      <div class="row">
+
+          <div class="card">
+            <div class="gallery">
+              <a target="_blank" href="img/product-1.jpg">
+                <img src="img/product-1.jpg" alt="Cinnamon">
+              </a>
+              <div class="desc">
+                <h3>Cinnamon </h3>
+                <h4>make you starving</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="gallery">
+              <a target="_blank" href="img/product-2.jpg">
+                <img src="img/product-2.jpg" alt="Cinnamon">
+              </a>
+              <div class="desc">
+                <h3>Vanilla</h3>
+                <h4>it's like you, sweets</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="gallery">
+              <a target="_blank" href="img/product-3.jpg">
+                <img src="img/product-3.jpg" alt="Cinnamon">
+              </a>
+              <div class="desc">
+                <h3>Jasmine</h3>
+                <h4>not a princess</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="gallery">
+              <a target="_blank" href="img/product-4.jpg">
+                <img src="img/product-4.jpg" alt="Cinnamon">
+              </a>
+              <div class="desc">
+                <h3>Honey</h3>
+                <h4>bunny sweety</h4>
+              </div>
+            </div>
+          </div>
+
+    </section>
+    <!-- Section 3: Product End -->
+
+    <!-- Section 4: About Us Start -->
+    <section class="about-us" id="about-us">
+      <div class="about-us-content">
+        <h1>About Us</h1>
+        <p>
+            actually not really about us, just a boring page. but if you are a nerd, hit the
+        </p>
+        <a href="https://instagram.com/fufaang">Read More</a>
+      </div>
+    </section>
+
+    <!-- Section 4: About Us End -->
+    
+    <!-- Section 5: Contact Us Start -->
+    <section id="contact-us" class="contact-us">
+        <div class="container">
+            <div class="contact-us-text">
+                <h2>There you are! Let me tell you something not so secret..
+                    <br>
+                    but, you go first..
+                </h2>
+                <h4>Swing by for a cup of coffee, or leave us a message:</h4>
+            </div>
+
+              <div class="">
+                <form action="" class="form">
+                  <label for="fname">Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="country">Origin</label>
+                  <select id="country" name="country">
+                    <option value="indo">Indonesia</option>
+                    <option value="indopride">IndoPride</option>
+                    <option value="indoo">Indotulen</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Tell me your secret.." style="height:100px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- Section 5: Contact Us End -->
+
+    <!-- Section 6: Footer Start -->
+
+    <footer>
+        <div class="footer">
+        <div class="column-4 logo">
+            <a href="#">
+                <img src="img/Logo.png" alt="" style="height: 50px;">
+            </a>
+        </div>
+        <div class="column-4 links">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about-us">About</a></li>            
+            </ul>
+        </div>
+        <div class="column-4 links">
+            <ul>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>                
+            </ul>
+        </div>
+        <div class="column-4 credit">
+            <p>Created by <a href="https://instagram.com/fufaang">Fufang</a> | &copy; 2023.</p>
+        </div>
+        <div class="column-4 socials">
+            <a href="#"><i data-feather="phone" style="color: white; height: 20px;"></i></a>
+            <a href="#"><i data-feather="mail" style="color: white; height: 20px;"></i></a>
+            <a href="#"><i data-feather="map-pin" style="color: white; height: 20px;"></i></a>
+            <a href="#"><i data-feather="instagram" style="color: white; height: 20px;"></i></a>
+            <a href="#"><i data-feather="twitter" style="color: white; height: 20px;"></i></a>
+            <a href="#"><i data-feather="linkedin" style="color: white; height: 20px;"></i></a>
+        </div>
+        </div>
+    </footer>
+        
+    <!-- Section 6: Footer End -->
+
+    <!-- Script -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>

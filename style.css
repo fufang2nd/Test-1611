@@ -1,0 +1,276 @@
+/* var */
+:root {
+  --primary: #546d55;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* ALL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.column-4 {
+  float: left;
+  width: 25%;
+}
+
+.column-6 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Button */
+
+/* 1: Nav Start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5%;
+  background-color: var(--primary);
+  border-bottom: 1px solid var(--white);
+}
+
+.navbar .navbar-logo img {
+  height: 70px;
+  width: auto;
+}
+
+.navbar .navbar-nav a {
+  color: var(--white);
+  float: inline-start;
+  margin: 0 20px;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 2px;
+  border-bottom: 2px solid var(--white);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .search-button {
+  color: var(--white);
+}
+
+/* Nav End */
+
+/* 2: Header Start */
+
+.header {
+  padding: 200px 7%;
+  margin: 0;
+  background-image: linear-gradient(rgba(190, 190, 190, 0.2), var(--primary)),
+    url("./img/Lilin.avif");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* Header End */
+
+/* 3: Product Start */
+
+.products {
+  padding: 20px 7%;
+}
+
+.text-product {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.products .row {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  -webkit-box-pack: center;
+}
+
+.card .gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.card .desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .desc:hover {
+  padding: 10px;
+  text-align: center;
+}
+
+.card {
+  padding: 0 7px;
+  float: left;
+  width: 25%;
+}
+
+/* Product End */
+
+/* 4: About Us Start */
+
+.about-us {
+  padding: 75px 7%;
+  background-image: linear-gradient(
+      rgba(190, 190, 190, 0.5),
+      rgba(88, 87, 87, 0.5)
+    ),
+    url("img/about-us.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.about-us .about-us-content {
+  position: relative;
+  background-color: var(--white);
+  padding: 10px;
+  width: 50%;
+}
+
+.about-us-content h1,
+p {
+  padding: 2px;
+  color: #000000;
+}
+
+.about-us-content a {
+  padding: 2px;
+  margin: 2px;
+  background-color: #546d55;
+  color: white;
+}
+
+.about-us-content a:hover {
+  cursor: pointer;
+  background-color: #45a049;
+}
+/* About Us End */
+
+/* 7: Contact Us Start */
+.contact-us-text {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.form {
+  padding: 10px 7%;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+/* Contact Us End */
+
+/* 8: Footer Start */
+/* Footer */
+.footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 30px 5%;
+  display: flex;
+  border-top: white 1px solid;
+}
+
+.footer li {
+  list-style: none;
+  text-align: left;
+}
+
+.footer li a {
+  color: white;
+}
+
+.footer .credit p {
+  color: white;
+}
+
+.footer .credit a {
+  color: black;
+}
+
+/* Footer End */
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* Handphone */
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
